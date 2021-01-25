@@ -1,8 +1,0 @@
-C:\Users\mara\source\repos\Diplom\src\corp\Corp\Corp.Services.DataContracts\bin\Debug\netcoreapp3.1\Corp.Services.DataContracts.deps.json
-C:\Users\mara\source\repos\Diplom\src\corp\Corp\Corp.Services.DataContracts\bin\Debug\netcoreapp3.1\Corp.Services.DataContracts.dll
-C:\Users\mara\source\repos\Diplom\src\corp\Corp\Corp.Services.DataContracts\bin\Debug\netcoreapp3.1\Corp.Services.DataContracts.pdb
-C:\Users\mara\source\repos\Diplom\src\corp\Corp\Corp.Services.DataContracts\obj\Debug\netcoreapp3.1\Corp.Services.DataContracts.AssemblyInfoInputs.cache
-C:\Users\mara\source\repos\Diplom\src\corp\Corp\Corp.Services.DataContracts\obj\Debug\netcoreapp3.1\Corp.Services.DataContracts.AssemblyInfo.cs
-C:\Users\mara\source\repos\Diplom\src\corp\Corp\Corp.Services.DataContracts\obj\Debug\netcoreapp3.1\Corp.Services.DataContracts.csproj.CoreCompileInputs.cache
-C:\Users\mara\source\repos\Diplom\src\corp\Corp\Corp.Services.DataContracts\obj\Debug\netcoreapp3.1\Corp.Services.DataContracts.dll
-C:\Users\mara\source\repos\Diplom\src\corp\Corp\Corp.Services.DataContracts\obj\Debug\netcoreapp3.1\Corp.Services.DataContracts.pdb

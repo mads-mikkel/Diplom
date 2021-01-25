@@ -1,7 +1,7 @@
 ﻿using Corp.Services.DataContracts;
 using System;
 using System.Net;
-using System.ServiceModel;  // Uses protobuf-net.Grpc package. Do not know why as 
+using System.ServiceModel;  // Uses protobuf-net.Grpc package. Do not know why. 
 
 namespace Services.ServiceContracts
 {
