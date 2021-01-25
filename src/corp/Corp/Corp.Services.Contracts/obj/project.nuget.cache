@@ -1,8 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "JagQp3lWD5iq6n08zhISx8WNU8vdbtYPR8wpnIMMeGkczsMgXQu2OsOiAmsh085NfpRtOy2wST89aJUAtcLcYg==",
+  "dgSpecHash": "kTDlAhSGqv++LYPEgB5OvLyZ2h2hfy7Vnj66tSNo1vyKxJP0j5v+lb7xutJb25pIp2mPPUWvyMIizKjHGiVPOA==",
   "success": true,
   "projectFilePath": "C:\\Users\\mara\\source\\repos\\Diplom\\src\\corp\\Corp\\Corp.Services.Contracts\\Corp.Services.Contracts.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\mara\\.nuget\\packages\\grpc.core.api\\2.34.1\\grpc.core.api.2.34.1.nupkg.sha512",
+    "C:\\Users\\mara\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.0\\microsoft.netcore.platforms.2.1.0.nupkg.sha512",
+    "C:\\Users\\mara\\.nuget\\packages\\protobuf-net\\2.4.6\\protobuf-net.2.4.6.nupkg.sha512",
+    "C:\\Users\\mara\\.nuget\\packages\\protobuf-net.grpc\\1.0.147\\protobuf-net.grpc.1.0.147.nupkg.sha512",
+    "C:\\Users\\mara\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\mara\\.nuget\\packages\\system.private.servicemodel\\4.5.3\\system.private.servicemodel.4.5.3.nupkg.sha512",
+    "C:\\Users\\mara\\.nuget\\packages\\system.reflection.dispatchproxy\\4.5.0\\system.reflection.dispatchproxy.4.5.0.nupkg.sha512",
+    "C:\\Users\\mara\\.nuget\\packages\\system.security.principal.windows\\4.5.0\\system.security.principal.windows.4.5.0.nupkg.sha512",
+    "C:\\Users\\mara\\.nuget\\packages\\system.servicemodel.primitives\\4.5.3\\system.servicemodel.primitives.4.5.3.nupkg.sha512"
+  ],
   "logs": []
 }
