@@ -3,7 +3,7 @@ using System;
 using System.Net;
 using System.ServiceModel;  // Uses protobuf-net.Grpc package. Do not know why. 
 
-namespace Services.ServiceContracts
+namespace Corp.Services.Contracts
 {
     [ServiceContract(Name = "DownloadDataService")]
     public interface IDownloadDataService
