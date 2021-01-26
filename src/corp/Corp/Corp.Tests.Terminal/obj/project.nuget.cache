@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "rzWegMRaX1LO4+H5EfBv77VTPL9byTw7XFJ1Y/cxudemSeoi+24SPwSzV9HG5x7Je6GAzQ+qi1qjgVxzl6gz6Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\mara\\source\\repos\\Diplom\\src\\corp\\Corp\\Corp.Tests.Terminal\\Corp.Tests.Terminal.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mara\\.nuget\\packages\\grpc.core.api\\2.34.1\\grpc.core.api.2.34.1.nupkg.sha512",
+    "C:\\Users\\mara\\.nuget\\packages\\grpc.net.client\\2.34.0\\grpc.net.client.2.34.0.nupkg.sha512",
+    "C:\\Users\\mara\\.nuget\\packages\\grpc.net.common\\2.34.0\\grpc.net.common.2.34.0.nupkg.sha512",
+    "C:\\Users\\mara\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.0.3\\microsoft.extensions.logging.abstractions.3.0.3.nupkg.sha512",
+    "C:\\Users\\mara\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.0\\microsoft.netcore.platforms.2.1.0.nupkg.sha512",
+    "C:\\Users\\mara\\.nuget\\packages\\protobuf-net\\2.4.6\\protobuf-net.2.4.6.nupkg.sha512",
+    "C:\\Users\\mara\\.nuget\\packages\\protobuf-net.grpc\\1.0.147\\protobuf-net.grpc.1.0.147.nupkg.sha512",
+    "C:\\Users\\mara\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.5.1\\system.diagnostics.diagnosticsource.4.5.1.nupkg.sha512",
+    "C:\\Users\\mara\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\mara\\.nuget\\packages\\system.private.servicemodel\\4.5.3\\system.private.servicemodel.4.5.3.nupkg.sha512",
+    "C:\\Users\\mara\\.nuget\\packages\\system.reflection.dispatchproxy\\4.5.0\\system.reflection.dispatchproxy.4.5.0.nupkg.sha512",
+    "C:\\Users\\mara\\.nuget\\packages\\system.security.principal.windows\\4.5.0\\system.security.principal.windows.4.5.0.nupkg.sha512",
+    "C:\\Users\\mara\\.nuget\\packages\\system.servicemodel.primitives\\4.5.3\\system.servicemodel.primitives.4.5.3.nupkg.sha512"
+  ],
+  "logs": []
+}

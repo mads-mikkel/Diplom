@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Corp.Applications.FloodingA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Corp.Applications.FloodingAlerter.TerminalClient", "Corp.Applications.FloodingAlerter.TerminalClient\Corp.Applications.FloodingAlerter.TerminalClient.csproj", "{23307F81-AC7D-418B-AB38-1D6934B833FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Corp.Tests.Terminal", "Corp.Tests.Terminal\Corp.Tests.Terminal.csproj", "{31B387F0-217F-4FA2-8E6C-D8F7815C1D9A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{23307F81-AC7D-418B-AB38-1D6934B833FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23307F81-AC7D-418B-AB38-1D6934B833FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23307F81-AC7D-418B-AB38-1D6934B833FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31B387F0-217F-4FA2-8E6C-D8F7815C1D9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31B387F0-217F-4FA2-8E6C-D8F7815C1D9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31B387F0-217F-4FA2-8E6C-D8F7815C1D9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31B387F0-217F-4FA2-8E6C-D8F7815C1D9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,6 +64,7 @@ Global
 		{8A996B2F-648B-44A2-AD52-DAA9182656C7} = {BD1AF88A-3BFC-4EFF-A295-4864F2A07AEC}
 		{EDD68E23-D3DB-4F15-AE7C-B68061287BAF} = {8A996B2F-648B-44A2-AD52-DAA9182656C7}
 		{23307F81-AC7D-418B-AB38-1D6934B833FE} = {8A996B2F-648B-44A2-AD52-DAA9182656C7}
+		{31B387F0-217F-4FA2-8E6C-D8F7815C1D9A} = {1448858D-F342-4997-8E21-A431C4F0A904}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3CF26CBF-36E2-47BF-BE24-719084663E71}
