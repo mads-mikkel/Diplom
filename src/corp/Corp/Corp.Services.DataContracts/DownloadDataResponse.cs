@@ -2,6 +2,7 @@
 
 namespace Corp.Services.DataContracts
 {
+    [DataContract]
     public class DownloadDataResponse
     {
         [DataMember(Order = 1)]

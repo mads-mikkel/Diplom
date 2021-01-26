@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kTDlAhSGqv++LYPEgB5OvLyZ2h2hfy7Vnj66tSNo1vyKxJP0j5v+lb7xutJb25pIp2mPPUWvyMIizKjHGiVPOA==",
+  "dgSpecHash": "m7nRMPj4xKgSSEF9PboqJV/GlepYHFzr5Iphgu7x18bF8mSqQcTKo5EgsZ8A5XYjWOHZfyrIc0nTrYTn+Zze+Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mara\\source\\repos\\Diplom\\src\\corp\\Corp\\Corp.Services.Contracts\\Corp.Services.Contracts.csproj",
+  "projectFilePath": "C:\\users\\mara\\source\\repos\\diplom\\src\\corp\\corp\\Corp.Services.Contracts\\Corp.Services.Contracts.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mara\\.nuget\\packages\\grpc.core.api\\2.34.1\\grpc.core.api.2.34.1.nupkg.sha512",
     "C:\\Users\\mara\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.0\\microsoft.netcore.platforms.2.1.0.nupkg.sha512",

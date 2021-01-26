@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mara\\source\\repos\\Diplom\\src\\corp\\Corp\\Corp.Services.DataContracts\\Corp.Services.DataContracts.csproj": {}
+    "C:\\users\\mara\\source\\repos\\diplom\\src\\corp\\corp\\Corp.Services.DataContracts\\Corp.Services.DataContracts.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mara\\source\\repos\\Diplom\\src\\corp\\Corp\\Corp.Services.DataContracts\\Corp.Services.DataContracts.csproj": {
+    "C:\\users\\mara\\source\\repos\\diplom\\src\\corp\\corp\\Corp.Services.DataContracts\\Corp.Services.DataContracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mara\\source\\repos\\Diplom\\src\\corp\\Corp\\Corp.Services.DataContracts\\Corp.Services.DataContracts.csproj",
+        "projectUniqueName": "C:\\users\\mara\\source\\repos\\diplom\\src\\corp\\corp\\Corp.Services.DataContracts\\Corp.Services.DataContracts.csproj",
         "projectName": "Corp.Services.DataContracts",
-        "projectPath": "C:\\Users\\mara\\source\\repos\\Diplom\\src\\corp\\Corp\\Corp.Services.DataContracts\\Corp.Services.DataContracts.csproj",
+        "projectPath": "C:\\users\\mara\\source\\repos\\diplom\\src\\corp\\corp\\Corp.Services.DataContracts\\Corp.Services.DataContracts.csproj",
         "packagesPath": "C:\\Users\\mara\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mara\\source\\repos\\Diplom\\src\\corp\\Corp\\Corp.Services.DataContracts\\obj\\",
+        "outputPath": "C:\\users\\mara\\source\\repos\\diplom\\src\\corp\\corp\\Corp.Services.DataContracts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

@@ -3,6 +3,7 @@ using System.Runtime.Serialization;
 
 namespace Corp.Services.DataContracts
 {
+    [DataContract]
     public class DownloadDataRequest
     {
         [DataMember(Order = 1)]

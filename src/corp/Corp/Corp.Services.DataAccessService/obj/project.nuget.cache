@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bwoS2uv8Wr2bZaKWlLQszllM0jqygGBTLPfDg0DQi+sZJcC1Af/V96fmTMG+J2Zi2IHEnI4Gzy0/LmCanSjP2Q==",
+  "dgSpecHash": "SKZetpYnbxo949OvyW5X06B/URwJzUpzlYNNx4s4i1vk5nFIAvo78IfHaJWNB9kzcTc33HOJWXHC4mM5gD0NhQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mara\\source\\repos\\Diplom\\src\\corp\\Corp\\Corp.Services.DataAccessService\\Corp.Services.DataAccessService.csproj",
+  "projectFilePath": "C:\\users\\mara\\source\\repos\\diplom\\src\\corp\\corp\\Corp.Services.DataAccessService\\Corp.Services.DataAccessService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mara\\.nuget\\packages\\grpc.aspnetcore.server\\2.34.0\\grpc.aspnetcore.server.2.34.0.nupkg.sha512",
     "C:\\Users\\mara\\.nuget\\packages\\grpc.core.api\\2.34.1\\grpc.core.api.2.34.1.nupkg.sha512",
