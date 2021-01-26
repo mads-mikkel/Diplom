@@ -1,0 +1,15 @@
+C:\Users\mara\source\repos\Diplom\src\corp\Corp\Corp.Applications.FloodingAlerter.TerminalClient\bin\Debug\net5.0\Corp.Applications.FloodingAlerter.TerminalClient.exe
+C:\Users\mara\source\repos\Diplom\src\corp\Corp\Corp.Applications.FloodingAlerter.TerminalClient\bin\Debug\net5.0\Corp.Applications.FloodingAlerter.TerminalClient.deps.json
+C:\Users\mara\source\repos\Diplom\src\corp\Corp\Corp.Applications.FloodingAlerter.TerminalClient\bin\Debug\net5.0\Corp.Applications.FloodingAlerter.TerminalClient.runtimeconfig.json
+C:\Users\mara\source\repos\Diplom\src\corp\Corp\Corp.Applications.FloodingAlerter.TerminalClient\bin\Debug\net5.0\Corp.Applications.FloodingAlerter.TerminalClient.runtimeconfig.dev.json
+C:\Users\mara\source\repos\Diplom\src\corp\Corp\Corp.Applications.FloodingAlerter.TerminalClient\bin\Debug\net5.0\Corp.Applications.FloodingAlerter.TerminalClient.dll
+C:\Users\mara\source\repos\Diplom\src\corp\Corp\Corp.Applications.FloodingAlerter.TerminalClient\bin\Debug\net5.0\ref\Corp.Applications.FloodingAlerter.TerminalClient.dll
+C:\Users\mara\source\repos\Diplom\src\corp\Corp\Corp.Applications.FloodingAlerter.TerminalClient\bin\Debug\net5.0\Corp.Applications.FloodingAlerter.TerminalClient.pdb
+C:\Users\mara\source\repos\Diplom\src\corp\Corp\Corp.Applications.FloodingAlerter.TerminalClient\obj\Debug\net5.0\Corp.Applications.FloodingAlerter.TerminalClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mara\source\repos\Diplom\src\corp\Corp\Corp.Applications.FloodingAlerter.TerminalClient\obj\Debug\net5.0\Corp.Applications.FloodingAlerter.TerminalClient.AssemblyInfoInputs.cache
+C:\Users\mara\source\repos\Diplom\src\corp\Corp\Corp.Applications.FloodingAlerter.TerminalClient\obj\Debug\net5.0\Corp.Applications.FloodingAlerter.TerminalClient.AssemblyInfo.cs
+C:\Users\mara\source\repos\Diplom\src\corp\Corp\Corp.Applications.FloodingAlerter.TerminalClient\obj\Debug\net5.0\Corp.Applications.FloodingAlerter.TerminalClient.csproj.CoreCompileInputs.cache
+C:\Users\mara\source\repos\Diplom\src\corp\Corp\Corp.Applications.FloodingAlerter.TerminalClient\obj\Debug\net5.0\Corp.Applications.FloodingAlerter.TerminalClient.dll
+C:\Users\mara\source\repos\Diplom\src\corp\Corp\Corp.Applications.FloodingAlerter.TerminalClient\obj\Debug\net5.0\ref\Corp.Applications.FloodingAlerter.TerminalClient.dll
+C:\Users\mara\source\repos\Diplom\src\corp\Corp\Corp.Applications.FloodingAlerter.TerminalClient\obj\Debug\net5.0\Corp.Applications.FloodingAlerter.TerminalClient.pdb
+C:\Users\mara\source\repos\Diplom\src\corp\Corp\Corp.Applications.FloodingAlerter.TerminalClient\obj\Debug\net5.0\Corp.Applications.FloodingAlerter.TerminalClient.genruntimeconfig.cache

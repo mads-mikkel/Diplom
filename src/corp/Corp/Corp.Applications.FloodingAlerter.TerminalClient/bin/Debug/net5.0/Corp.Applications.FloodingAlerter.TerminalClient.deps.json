@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Corp.Applications.FloodingAlerter.TerminalClient/1.0.0": {
+        "runtime": {
+          "Corp.Applications.FloodingAlerter.TerminalClient.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Corp.Applications.FloodingAlerter.TerminalClient/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
