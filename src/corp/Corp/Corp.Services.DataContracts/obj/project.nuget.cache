@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uYLa2q4owFcDbUtY1hqhFgHJAuOblU095WNM4+wlM7CNM6Hxx6q88zITlLRJCQcstAzvGx3Dv4MhCfTJymBB3Q==",
+  "dgSpecHash": "brsgCntWjRVKNeKcE8Oe77RmAS2leuDmLkaJArETUbEntyUjoLmfgZWe0VoHkjOmUW9DgVGAUJhchXahJR6lYA==",
   "success": true,
-  "projectFilePath": "C:\\users\\mara\\source\\repos\\diplom\\src\\corp\\corp\\Corp.Services.DataContracts\\Corp.Services.DataContracts.csproj",
+  "projectFilePath": "C:\\Users\\mara\\source\\repos\\Diplom\\src\\corp\\Corp\\Corp.Services.DataContracts\\Corp.Services.DataContracts.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

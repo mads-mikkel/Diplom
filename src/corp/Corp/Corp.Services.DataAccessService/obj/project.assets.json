@@ -538,11 +538,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\users\\mara\\source\\repos\\diplom\\src\\corp\\corp\\Corp.Services.DataAccessService\\Corp.Services.DataAccessService.csproj",
+      "projectUniqueName": "C:\\Users\\mara\\source\\repos\\Diplom\\src\\corp\\Corp\\Corp.Services.DataAccessService\\Corp.Services.DataAccessService.csproj",
       "projectName": "Corp.Services.DataAccessService",
-      "projectPath": "C:\\users\\mara\\source\\repos\\diplom\\src\\corp\\corp\\Corp.Services.DataAccessService\\Corp.Services.DataAccessService.csproj",
+      "projectPath": "C:\\Users\\mara\\source\\repos\\Diplom\\src\\corp\\Corp\\Corp.Services.DataAccessService\\Corp.Services.DataAccessService.csproj",
       "packagesPath": "C:\\Users\\mara\\.nuget\\packages\\",
-      "outputPath": "C:\\users\\mara\\source\\repos\\diplom\\src\\corp\\corp\\Corp.Services.DataAccessService\\obj\\",
+      "outputPath": "C:\\Users\\mara\\source\\repos\\Diplom\\src\\corp\\Corp\\Corp.Services.DataAccessService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -563,11 +563,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\users\\mara\\source\\repos\\diplom\\src\\corp\\corp\\Corp.Services.Contracts\\Corp.Services.Contracts.csproj": {
-              "projectPath": "C:\\users\\mara\\source\\repos\\diplom\\src\\corp\\corp\\Corp.Services.Contracts\\Corp.Services.Contracts.csproj"
+            "C:\\Users\\mara\\source\\repos\\Diplom\\src\\corp\\Corp\\Corp.Services.Contracts\\Corp.Services.Contracts.csproj": {
+              "projectPath": "C:\\Users\\mara\\source\\repos\\Diplom\\src\\corp\\Corp\\Corp.Services.Contracts\\Corp.Services.Contracts.csproj"
             },
-            "C:\\users\\mara\\source\\repos\\diplom\\src\\corp\\corp\\Corp.Services.DataContracts\\Corp.Services.DataContracts.csproj": {
-              "projectPath": "C:\\users\\mara\\source\\repos\\diplom\\src\\corp\\corp\\Corp.Services.DataContracts\\Corp.Services.DataContracts.csproj"
+            "C:\\Users\\mara\\source\\repos\\Diplom\\src\\corp\\Corp\\Corp.Services.DataContracts\\Corp.Services.DataContracts.csproj": {
+              "projectPath": "C:\\Users\\mara\\source\\repos\\Diplom\\src\\corp\\Corp\\Corp.Services.DataContracts\\Corp.Services.DataContracts.csproj"
             }
           }
         }
