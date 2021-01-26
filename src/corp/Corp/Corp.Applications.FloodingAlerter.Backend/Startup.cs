@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using ProtoBuf.Grpc.Server;
+using Microsoft.AspNetCore.SignalR;
+using System.Threading.Tasks;
 
 namespace Corp.Applications.FloodingAlerter.Backend
 {
@@ -11,6 +13,7 @@ namespace Corp.Applications.FloodingAlerter.Backend
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddCodeFirstGrpc();
+            services.AddSignalR();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -21,6 +24,21 @@ namespace Corp.Applications.FloodingAlerter.Backend
             }
 
             app.UseRouting();
+
+            app.UseEndpoints(endpoints => 
+            {
+                endpoints.MapHub<FloodingAlertHub>("");
+            });
         }
+    }
+
+    public class FloodingAlertHub :Hub<IAlertClient> 
+    {
+        public async Task SendMessage(string message) => await Clients.All.ReceiveMessage(message);
+    }
+
+    public interface IAlertClient
+    {
+        Task ReceiveMessage(string message);
     }
 }

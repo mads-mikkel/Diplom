@@ -39,3 +39,5 @@ C:\Users\mara\source\repos\Diplom\src\corp\Corp\Corp.Applications.FloodingAlerte
 C:\Users\mara\source\repos\Diplom\src\corp\Corp\Corp.Applications.FloodingAlerter.Backend\obj\Debug\net5.0\ref\Corp.Applications.FloodingAlerter.Backend.dll
 C:\Users\mara\source\repos\Diplom\src\corp\Corp\Corp.Applications.FloodingAlerter.Backend\obj\Debug\net5.0\Corp.Applications.FloodingAlerter.Backend.pdb
 C:\Users\mara\source\repos\Diplom\src\corp\Corp\Corp.Applications.FloodingAlerter.Backend\obj\Debug\net5.0\Corp.Applications.FloodingAlerter.Backend.genruntimeconfig.cache
+C:\Users\mara\source\repos\Diplom\src\corp\Corp\Corp.Applications.FloodingAlerter.Backend\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\mara\source\repos\Diplom\src\corp\Corp\Corp.Applications.FloodingAlerter.Backend\bin\Debug\net5.0\System.Net.WebSockets.WebSocketProtocol.dll
