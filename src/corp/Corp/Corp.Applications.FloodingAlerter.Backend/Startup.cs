@@ -25,14 +25,14 @@ namespace Corp.Applications.FloodingAlerter.Backend
 
             app.UseRouting();
 
-            app.UseEndpoints(endpoints => 
+            app.UseEndpoints(endpoints =>
             {
-                endpoints.MapHub<FloodingAlertHub>("");
+                endpoints.MapHub<FloodingAlertHub>("floodingalerterhub");
             });
         }
     }
 
-    public class FloodingAlertHub :Hub<IAlertClient> 
+    public class FloodingAlertHub: Hub<IAlertClient>
     {
         public async Task SendMessage(string message) => await Clients.All.ReceiveMessage(message);
     }

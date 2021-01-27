@@ -14,7 +14,7 @@ namespace Corp.Applications.FloodingAlerter.Backend
 
         public static IWebHostBuilder CreateHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                   .ConfigureKestrel(options => options.ListenLocalhost(10042, ListenOptions => ListenOptions.Protocols = HttpProtocols.Http2))
+                   .ConfigureKestrel(options => options.ListenLocalhost(9001, ListenOptions => ListenOptions.Protocols = HttpProtocols.Http2))
                    .UseStartup<Startup>();
     }
 }
