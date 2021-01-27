@@ -25,7 +25,7 @@ namespace Corp.Services.DataAccessService
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapGrpcService<IDownloadDataService>();
+                endpoints.MapGrpcService<DownloadDataService>();
             });
         }
     }

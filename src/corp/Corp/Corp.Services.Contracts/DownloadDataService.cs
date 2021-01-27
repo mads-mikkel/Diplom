@@ -12,7 +12,7 @@ namespace Corp.Services.Contracts
         DownloadDataResponse DownloadWith(DownloadDataRequest request);
     }
 
-    public class DownloadFileService: IDownloadDataService
+    public class DownloadDataService: IDownloadDataService
     {
         public DownloadDataResponse DownloadWith(DownloadDataRequest request)
         {
