@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -9,6 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Corp.Resources\Corp.Resources.csproj" />
     <ProjectReference Include="..\Corp.Services.Contracts\Corp.Services.Contracts.csproj" />
     <ProjectReference Include="..\Corp.Services.DataContracts\Corp.Services.DataContracts.csproj" />
   </ItemGroup>
