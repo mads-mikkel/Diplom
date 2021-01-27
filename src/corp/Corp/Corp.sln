@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Corp.Environment", "Corp.En
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Corp.Services.SignalRHub", "Corp.Services.SignalRHub\Corp.Services.SignalRHub.csproj", "{0AFA9F39-448B-4E81-AAD7-BBAC6D3517AA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Corp.Applications.FloodingAlerter.TermialClient", "Corp.Applications.FloodingAlerter.TermialClient\Corp.Applications.FloodingAlerter.TermialClient.csproj", "{1345E63D-5A6C-43CA-9B7F-66D70392CED5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +61,10 @@ Global
 		{0AFA9F39-448B-4E81-AAD7-BBAC6D3517AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0AFA9F39-448B-4E81-AAD7-BBAC6D3517AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0AFA9F39-448B-4E81-AAD7-BBAC6D3517AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1345E63D-5A6C-43CA-9B7F-66D70392CED5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1345E63D-5A6C-43CA-9B7F-66D70392CED5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1345E63D-5A6C-43CA-9B7F-66D70392CED5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1345E63D-5A6C-43CA-9B7F-66D70392CED5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -70,6 +76,7 @@ Global
 		{8A996B2F-648B-44A2-AD52-DAA9182656C7} = {BD1AF88A-3BFC-4EFF-A295-4864F2A07AEC}
 		{F1D4933A-8B93-45F8-A1E8-BF81E7A5EA19} = {1448858D-F342-4997-8E21-A431C4F0A904}
 		{0AFA9F39-448B-4E81-AAD7-BBAC6D3517AA} = {06004E56-849E-4B8B-BF6D-F3BCCD861002}
+		{1345E63D-5A6C-43CA-9B7F-66D70392CED5} = {8A996B2F-648B-44A2-AD52-DAA9182656C7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3CF26CBF-36E2-47BF-BE24-719084663E71}
