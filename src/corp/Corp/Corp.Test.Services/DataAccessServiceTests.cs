@@ -1,14 +1,20 @@
+using Corp.Services.Contracts;
 using Corp.Services.DataContracts;
 using Grpc.Net.Client;
 using ProtoBuf.Grpc.Client;
 using System;
 using Xunit;
+using static Corp.Resources.Infrastructure.Endpoints.Services;
 
 namespace Corp.Test.Services
 {
     public class DataAccessServiceTests
     {
-        private GrpcChannel
+        private GrpcChannel GetLocalHostChannel(int port)
+        {
+            string address = $"http://localhost:{port}";
+            return GrpcChannel.ForAddress(address);
+        }
 
         [Fact]
         public void CanDownloadData()
@@ -17,18 +23,21 @@ namespace Corp.Test.Services
             string url = "https://kystatlas.kyst.dk/public2/data/vandstand/response.aspx?ident=20201&startdate=20180825&enddate=20180826&format=csv";
             Uri uri = new(url);
             DownloadDataRequest request = new() { Uri = uri };
+            GrpcChannel channel = GetLocalHostChannel(DataAccessServicePort);
+            DownloadDataResponse response;
+            GrpcClientFactory.AllowUnencryptedHttp2 = true;   
 
-            // Act:
-            //DownloadDataResponse response = 
+            using(channel)
+            {
+                IDownloadDataService service = channel.CreateGrpcService<IDownloadDataService>();
+
+                // Act:
+                response = service.DownloadWith(request);
+            }
 
             // Assert:
-            GrpcClientFactory.AllowUnencryptedHttp2 = true;
-            using(var channel = GrpcChannel.ForAddress("http://localhost:10042"))
-            {
-                var calculator = channel.CreateGrpcService<ICalculator>();
-                var result = await calculator.MultiplyAsync(new MultiplyRequest { X = 12, Y = 4 });
-                Console.WriteLine(result.Result);
-            }
+            Assert.NotNull(response.Data);
+            Assert.True(response.Data.Length > 0);
         }
     }
 }
