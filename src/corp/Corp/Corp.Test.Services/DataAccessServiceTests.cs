@@ -1,4 +1,6 @@
 using Corp.Services.DataContracts;
+using Grpc.Net.Client;
+using ProtoBuf.Grpc.Client;
 using System;
 using Xunit;
 
@@ -6,7 +8,7 @@ namespace Corp.Test.Services
 {
     public class DataAccessServiceTests
     {
-        
+        private GrpcChannel
 
         [Fact]
         public void CanDownloadData()
@@ -20,6 +22,13 @@ namespace Corp.Test.Services
             //DownloadDataResponse response = 
 
             // Assert:
+            GrpcClientFactory.AllowUnencryptedHttp2 = true;
+            using(var channel = GrpcChannel.ForAddress("http://localhost:10042"))
+            {
+                var calculator = channel.CreateGrpcService<ICalculator>();
+                var result = await calculator.MultiplyAsync(new MultiplyRequest { X = 12, Y = 4 });
+                Console.WriteLine(result.Result);
+            }
         }
     }
 }
