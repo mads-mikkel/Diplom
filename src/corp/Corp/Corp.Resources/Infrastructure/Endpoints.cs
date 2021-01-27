@@ -4,12 +4,12 @@
     {
         public static class Applications
         {
-            public const int FloodingAlerter = 2001;
+            public const int FloodingAlerter = 2000;
         }
 
         public static class Services
         {
-            public const int DataAccessServicePort = 3001;
+            public const int DataAccessServicePort = 3000;
         }
     }
 }
