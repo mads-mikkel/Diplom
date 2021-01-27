@@ -6,8 +6,8 @@
     <coordinates>
       <x>270</x>
       <y>90</y>
-      <w>480</w>
-      <h>600</h>
+      <w>260</w>
+      <h>340</h>
     </coordinates>
     <panel_attributes>Applications
 --
@@ -19,12 +19,84 @@
     <coordinates>
       <x>910</x>
       <y>90</y>
-      <w>480</w>
-      <h>600</h>
+      <w>200</w>
+      <h>350</h>
     </coordinates>
     <panel_attributes>Services
 --
 </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>940</x>
+      <y>140</y>
+      <w>140</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>SignalRHubs
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>940</x>
+      <y>340</y>
+      <w>140</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>DataContracts
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>940</x>
+      <y>240</y>
+      <w>140</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Contracts
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>300</x>
+      <y>140</y>
+      <w>200</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>FloodingAlerter
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>330</x>
+      <y>190</y>
+      <w>140</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Backend
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>330</x>
+      <y>280</y>
+      <w>140</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>TerminalClient
+--</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
