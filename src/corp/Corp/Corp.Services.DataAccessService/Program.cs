@@ -2,6 +2,7 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Server.Kestrel.Core;
 using Microsoft.Extensions.Hosting;
+using static Corp.Resources.Infrastructure.Endpoints.Services;
 
 namespace Corp.Services.DataAccessService
 {
@@ -14,7 +15,7 @@ namespace Corp.Services.DataAccessService
 
         public static IWebHostBuilder CreateHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                   .ConfigureKestrel(options => options.ListenLocalhost(10042, ListenOptions => ListenOptions.Protocols = HttpProtocols.Http2))
+                   .ConfigureKestrel(options => options.ListenLocalhost(DataAccessServicePort, ListenOptions => ListenOptions.Protocols = HttpProtocols.Http2))
                    .UseStartup<Startup>();
     }
 }
