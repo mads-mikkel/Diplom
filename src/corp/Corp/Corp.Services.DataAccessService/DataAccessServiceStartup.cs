@@ -7,7 +7,7 @@ using Corp.Services.Contracts;
 
 namespace Corp.Services.DataAccessService
 {
-    public class Startup
+    public class DataAccessServiceStartup
     {
         public void ConfigureServices(IServiceCollection services)
         {

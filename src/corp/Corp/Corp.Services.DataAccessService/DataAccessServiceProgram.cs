@@ -6,7 +6,7 @@ using static Corp.Resources.Infrastructure.Endpoints.Services;
 
 namespace Corp.Services.DataAccessService
 {
-    public class Program
+    public class DataAccessServiceProgram
     {
         public static void Main(string[] args)
         {
@@ -16,6 +16,6 @@ namespace Corp.Services.DataAccessService
         public static IWebHostBuilder CreateHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                    .ConfigureKestrel(options => options.ListenLocalhost(DataAccessServicePort, ListenOptions => ListenOptions.Protocols = HttpProtocols.Http2))
-                   .UseStartup<Startup>();
+                   .UseStartup<DataAccessServiceStartup>();
     }
 }

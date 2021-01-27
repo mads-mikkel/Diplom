@@ -19,4 +19,11 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Corp.Resources\Corp.Resources.csproj" />
+    <ProjectReference Include="..\Corp.Services.Contracts\Corp.Services.Contracts.csproj" />
+    <ProjectReference Include="..\Corp.Services.DataAccessService\Corp.Services.DataAccessService.csproj" />
+    <ProjectReference Include="..\Corp.Services.DataContracts\Corp.Services.DataContracts.csproj" />
+  </ItemGroup>
+
 </Project>
