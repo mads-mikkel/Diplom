@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "dgSpecHash": "07FfBQ1UXBoO14U5oYvmL9bQrHdJstUhayOEbndGLp6q8XbCiZMSyzmaXTuj7n7hNTMqv12Mm9d3dTPAMF7DeQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\mara\\source\\repos\\Diplom\\src\\corp\\Corp\\Corp.Applications.FloodingAlerter.TerminalClient\\Corp.Applications.FloodingAlerter.TerminalClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mara\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\5.0.2\\microsoft.aspnetcore.connections.abstractions.5.0.2.nupkg.sha512",
+    "C:\\Users\\mara\\.nuget\\packages\\microsoft.aspnetcore.http.connections.client\\5.0.2\\microsoft.aspnetcore.http.connections.client.5.0.2.nupkg.sha512",
+    "C:\\Users\\mara\\.nuget\\packages\\microsoft.aspnetcore.http.connections.common\\5.0.2\\microsoft.aspnetcore.http.connections.common.5.0.2.nupkg.sha512",
+    "C:\\Users\\mara\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.2\\microsoft.aspnetcore.http.features.5.0.2.nupkg.sha512",
+    "C:\\Users\\mara\\.nuget\\packages\\microsoft.aspnetcore.signalr.client\\5.0.2\\microsoft.aspnetcore.signalr.client.5.0.2.nupkg.sha512",
+    "C:\\Users\\mara\\.nuget\\packages\\microsoft.aspnetcore.signalr.client.core\\5.0.2\\microsoft.aspnetcore.signalr.client.core.5.0.2.nupkg.sha512",
+    "C:\\Users\\mara\\.nuget\\packages\\microsoft.aspnetcore.signalr.common\\5.0.2\\microsoft.aspnetcore.signalr.common.5.0.2.nupkg.sha512",
+    "C:\\Users\\mara\\.nuget\\packages\\microsoft.aspnetcore.signalr.protocols.json\\5.0.2\\microsoft.aspnetcore.signalr.protocols.json.5.0.2.nupkg.sha512",
+    "C:\\Users\\mara\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.1\\microsoft.extensions.dependencyinjection.5.0.1.nupkg.sha512",
+    "C:\\Users\\mara\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\mara\\.nuget\\packages\\microsoft.extensions.logging\\5.0.0\\microsoft.extensions.logging.5.0.0.nupkg.sha512",
+    "C:\\Users\\mara\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\mara\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
+    "C:\\Users\\mara\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\mara\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512",
+    "C:\\Users\\mara\\.nuget\\packages\\system.threading.channels\\5.0.0\\system.threading.channels.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
