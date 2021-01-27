@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Corp.Services.SignalRHub": {
+      "commandName": "Project",
+      "launchBrowser": false,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://localhost:3002/"
+    }
+  }
+}

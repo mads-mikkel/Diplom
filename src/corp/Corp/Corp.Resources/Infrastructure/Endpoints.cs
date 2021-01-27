@@ -10,6 +10,7 @@
         public static class Services
         {
             public const int DataAccessServicePort = 3000;
+            public const int HubPort = 3002;
         }
     }
 }

@@ -20,7 +20,8 @@ namespace Corp.Environment
             WriteLine("--- DRIFTSMILJØSIMULATION START ---");
             string[] servicesToStart =
             {
-                nameof(Services.DataAccessService)
+                nameof(Services.DataAccessService),
+                nameof(Services.SignalRHub)
             };
 
             try
