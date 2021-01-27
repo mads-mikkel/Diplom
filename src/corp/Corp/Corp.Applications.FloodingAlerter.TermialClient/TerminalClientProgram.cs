@@ -5,11 +5,13 @@ using static Corp.Resources.Infrastructure.Endpoints.Services;
 
 namespace Corp.Applications.FloodingAlerter.TermialClient
 {
-    class Program
+    class TerminalClientProgram
     {
         static async Task Main(string[] args)
         {
-            Client c = new Client() { Id = "1" };
+            Random generator = new Random();
+            string id = generator.Next(1, 100).ToString();
+            Client c = new Client() { Id = id };
             await c.Initialize();
             Console.ReadLine();
         }

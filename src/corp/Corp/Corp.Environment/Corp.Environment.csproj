@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Corp.Applications.FloodingAlerter.TermialClient\Corp.Applications.FloodingAlerter.TermialClient.csproj" />
     <ProjectReference Include="..\Corp.Services.DataAccessService\Corp.Services.DataAccessService.csproj" />
     <ProjectReference Include="..\Corp.Services.SignalRHub\Corp.Services.SignalRHub.csproj" />
   </ItemGroup>
