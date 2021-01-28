@@ -11,6 +11,7 @@
         {
             public const int DataAccessServicePort = 3000;
             public const int HubPort = 3002;
+            public const int FloodingAlerterWorkflowPort = 3004;
         }
     }
 }
