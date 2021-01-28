@@ -2,6 +2,7 @@
 using System;
 using System.Net;
 using System.ServiceModel;  // Uses protobuf-net.Grpc package. Do not know why. 
+using System.Threading.Tasks;
 
 namespace Corp.Services.Contracts
 {
@@ -9,12 +10,12 @@ namespace Corp.Services.Contracts
     public interface IDownloadDataService
     {
         [OperationContract]
-        DownloadDataResponse DownloadWith(DownloadDataRequest request);
+        Task<DownloadDataResponse> DownloadWith(DownloadDataRequest request);
     }
 
     public class DownloadDataService: IDownloadDataService
     {
-        public DownloadDataResponse DownloadWith(DownloadDataRequest request)
+        public async Task<DownloadDataResponse> DownloadWith(DownloadDataRequest request)
         {
             DownloadDataResponse response = new();
 
@@ -22,7 +23,7 @@ namespace Corp.Services.Contracts
             {
                 using(WebClient webClient = new())
                 {
-                    response.Data = webClient.DownloadData(request.Uri);
+                    response.Data = await webClient.DownloadDataTaskAsync(request.Uri);
                 }
             }
             catch(Exception e)

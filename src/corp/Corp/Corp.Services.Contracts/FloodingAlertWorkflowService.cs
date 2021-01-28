@@ -4,6 +4,7 @@ using ProtoBuf.Grpc.Client;
 using System;
 using System.Net;
 using System.ServiceModel;
+using System.Threading.Tasks;
 using static Corp.Resources.Infrastructure.Endpoints.Services;
 
 namespace Corp.Services.Contracts
@@ -12,17 +13,17 @@ namespace Corp.Services.Contracts
     public interface IFloodingAlertWorkflowService
     {
         [OperationContract]
-        FloodingAlertWorkflowResponse StartWorkflow();
+        Task<FloodingAlertWorkflowResponse> StartWorkflow();
     }
 
     public class FloodingAlertWorkflowService: IFloodingAlertWorkflowService
     {
-        public FloodingAlertWorkflowResponse StartWorkflow()
+        public async Task<FloodingAlertWorkflowResponse> StartWorkflow()
         {
             FloodingAlertWorkflowResponse response = new();
             try
             {
-                DownloadDataResponse downloadDataResponse = GetCurrentWaterLevelData();
+                DownloadDataResponse downloadDataResponse = await GetCurrentWaterLevelData();
                 response.WaterLevel = downloadDataResponse.Data[0];
                 response.MessageInfo = "Request succeeded.";
             }
@@ -33,7 +34,7 @@ namespace Corp.Services.Contracts
             return response;
         }
 
-        private DownloadDataResponse GetCurrentWaterLevelData()
+        private async Task<DownloadDataResponse> GetCurrentWaterLevelData()
         {
             string url = GenerateCoastDirectorateUrl();
             Uri uri = new Uri(url);
@@ -45,7 +46,7 @@ namespace Corp.Services.Contracts
             using(channel)
             {
                 IDownloadDataService downloadDataService = channel.CreateGrpcService<IDownloadDataService>();
-                response = downloadDataService.DownloadWith(request);
+                response = await downloadDataService.DownloadWith(request);
             }
             return response;
         }

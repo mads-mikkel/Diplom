@@ -13,5 +13,10 @@
             public const int HubPort = 3002;
             public const int FloodingAlerterWorkflowPort = 3004;
         }
+
+        public static class HubNames
+        {
+            public const string FloodingAlerterHub = "/hubs/floodingalerter";
+        }
     }
 }

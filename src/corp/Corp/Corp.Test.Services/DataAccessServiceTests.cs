@@ -3,6 +3,7 @@ using Corp.Services.DataContracts;
 using Grpc.Net.Client;
 using ProtoBuf.Grpc.Client;
 using System;
+using System.Threading.Tasks;
 using Xunit;
 using static Corp.Resources.Infrastructure.Endpoints.Services;
 
@@ -17,7 +18,7 @@ namespace Corp.Test.Services
         }
 
         [Fact]
-        public void CanDownloadData()
+        public async Task CanDownloadData()
         {
             // Arrange:
             string url = "https://kystatlas.kyst.dk/public2/data/vandstand/response.aspx?ident=20201&startdate=20180825&enddate=20180826&format=csv";
@@ -32,7 +33,7 @@ namespace Corp.Test.Services
                 IDownloadDataService service = channel.CreateGrpcService<IDownloadDataService>();
 
                 // Act:
-                response = service.DownloadWith(request);
+                response = await service.DownloadWith(request);
             }
 
             // Assert:

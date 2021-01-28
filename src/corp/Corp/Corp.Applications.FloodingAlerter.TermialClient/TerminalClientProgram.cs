@@ -2,6 +2,7 @@
 using System;
 using System.Threading.Tasks;
 using static Corp.Resources.Infrastructure.Endpoints.Services;
+using static Corp.Resources.Infrastructure.Endpoints.HubNames;
 
 namespace Corp.Applications.FloodingAlerter.TermialClient
 {
@@ -20,20 +21,20 @@ namespace Corp.Applications.FloodingAlerter.TermialClient
     class Client
     {
         HubConnection connection;
-        readonly string url = $"http://localhost:{HubPort}/hubs/clock";
+        readonly string url = $"http://localhost:{HubPort}{FloodingAlerterHub}";
 
         public string Id { get; set; }
 
         public async Task Initialize()
         {
             connection = new HubConnectionBuilder().WithUrl(url).Build();
-            connection.On<DateTime>(nameof(ShowTime), ShowTime);
+            connection.On<string>(nameof(ShowLatestAlert), ShowLatestAlert);
             await connection.StartAsync();
         }
 
-        public Task ShowTime(DateTime currentTime)
+        public Task ShowLatestAlert(string alert)
         {
-            Console.WriteLine($"Client {Id} modtaget data kl. {currentTime.ToShortTimeString()}.");
+            Console.WriteLine($"Client {Id}: {alert}");
             return Task.CompletedTask;
         }
     }
