@@ -2,6 +2,7 @@
 using Grpc.Net.Client;
 using ProtoBuf.Grpc.Client;
 using System;
+using System.Linq;
 using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,7 +26,7 @@ namespace Corp.Services.Contracts
             {
                 DownloadDataResponse downloadDataResponse = await GetCurrentWaterLevelData();
                 string filterredCsv = await FilterData(downloadDataResponse);
-                response.WaterLevel = 25;
+                response.WaterLevel = Int32.Parse(filterredCsv.Split('\n').Last());
                 response.MessageInfo = "Request succeeded.";
             }
             catch(Exception e)
@@ -58,7 +59,7 @@ namespace Corp.Services.Contracts
             GrpcChannel channel = GrpcChannel.ForAddress(localHostAddress);
             GrpcClientFactory.AllowUnencryptedHttp2 = true;
             string csv = Encoding.Default.GetString(dataResponse.Data);
-            int[] keepColumns = new int[] { 1, 2, 5 };
+            int[] keepColumns = new int[] { 1 };
             CsvFilterRequest filterRequest = new() { Csv = csv, KeepColumns = keepColumns, RemoveHeader = true };
             string response;
             using(channel)

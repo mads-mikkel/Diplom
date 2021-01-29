@@ -27,7 +27,7 @@ namespace Corp.Services.Contracts
             string csvText = request.Csv;
             if(request.RemoveHeader)
             {
-                csvText = csvText.Remove(0, csvText.IndexOf('\n'));
+                csvText = csvText.Remove(0, csvText.IndexOf('\n') + 1);
             }
             int[] keepColumns = request.KeepColumns;
             string filteredCsv = String.Empty;
@@ -35,42 +35,37 @@ namespace Corp.Services.Contracts
             await Task.Run(() =>
             {
                 string[] lines = csvText.Split('\n');
-                int i = lines[0] == String.Empty ? 1 : 0;
-                int n = lines[lines.Length - 1] == String.Empty ? lines.Length - 1 : lines.Length;
-                while(i < n)
+                int lineCount = lines.Length;
+                for(int lineIndex = 0; lineIndex < lineCount; lineIndex++)
                 {
                     string[] filteredLineValues = new string[keepColumns.Length];
-                    string line = lines[i];
-                    string[] lineValues = line.Split(',');
-                    int l = 0;
-                    int k = 0;
-                    for(int j = 0; j < lineValues.Length; j++)
+                    string[] lineValues = lines[lineIndex].Split(',');
+                    int lineValuesCount = lineValues.Length;
+                    for(int lineValueIndex = 0; lineValueIndex < lineValuesCount; lineValueIndex++)
                     {
-                        while(k < keepColumns.Length)
+                        int keepColumnsCount = keepColumns.Length;
+                        for(int keepColumnIndex = 0; keepColumnIndex < keepColumnsCount; keepColumnIndex++)
                         {
-                            if(j == k)
+                            int keepColumnValue = keepColumns[keepColumnIndex];
+                            if(keepColumnValue == lineValueIndex)
                             {
-                                filteredLineValues[l] = lineValues[j];
-                                break;
+                                filteredLineValues[keepColumnIndex] = lineValues[lineValueIndex];
                             }
-                            k++; l++;
                         }
-                        
-                        //if(j == keepColumns[j])
-                        //{
-                        //    filteredLineValues[l] = lineValues[j];
-                        //    l++;
-                        //}
                     }
-                    for(int j = 0; j < filteredLineValues.Length - 1; j++)
+                    
+                    for(int filteredLineIndex = 0; filteredLineIndex < filteredLineValues.Length; filteredLineIndex++)
                     {
-                        filteredCsv += String.Concat(filteredLineValues[j], ",");
+                        filteredCsv += filteredLineValues[filteredLineIndex];
+                        if(filteredLineValues.Length > 1)
+                        {
+                            filteredCsv += ",";
+                        }
                     }
-                    if(i < lines.Length - 2)
+                    if(lineIndex < lineCount - 2)
                     {
                         filteredCsv += "\n";
                     }
-                    i++;
                 }
             });
             return filteredCsv;

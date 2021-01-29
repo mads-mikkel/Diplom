@@ -7,7 +7,7 @@ namespace Corp.Services.DataContracts
     public class FloodingAlertWorkflowResponse
     {
         [DataMember(Order = 1)]
-        public double WaterLevel { get; set; }
+        public int WaterLevel { get; set; } // cm
 
         [DataMember(Order = 2)]
         public string WindSpeed { get; set; }
