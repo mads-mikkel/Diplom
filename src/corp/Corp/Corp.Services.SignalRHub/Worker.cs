@@ -32,7 +32,7 @@ namespace Corp.Services.SignalRHub
                 FloodingAlertWorkflowResponse workflowResult = await GetFloodingAlertData();
                 string alert = ConstructAlertMessage(workflowResult);
                 await floodingAlerterHub.Clients.All.ShowLatestAlert(alert);
-                await Task.Delay(30000);   // 30 sec
+                await Task.Delay(15000);   // 15 sec
             }
         }
 

@@ -2,8 +2,8 @@
 using Grpc.Net.Client;
 using ProtoBuf.Grpc.Client;
 using System;
-using System.Net;
 using System.ServiceModel;
+using System.Text;
 using System.Threading.Tasks;
 using static Corp.Resources.Infrastructure.Endpoints.Services;
 
@@ -24,12 +24,13 @@ namespace Corp.Services.Contracts
             try
             {
                 DownloadDataResponse downloadDataResponse = await GetCurrentWaterLevelData();
-                response.WaterLevel = downloadDataResponse.Data[0];
+                string filterredCsv = await FilterData(downloadDataResponse);
+                response.WaterLevel = 25;
                 response.MessageInfo = "Request succeeded.";
             }
             catch(Exception e)
             {
-                response.MessageInfo= "Request failed.";
+                response.MessageInfo = "Request failed.";
             }
             return response;
         }
@@ -47,6 +48,23 @@ namespace Corp.Services.Contracts
             {
                 IDownloadDataService downloadDataService = channel.CreateGrpcService<IDownloadDataService>();
                 response = await downloadDataService.DownloadWith(request);
+            }
+            return response;
+        }
+
+        private async Task<string> FilterData(DownloadDataResponse dataResponse)
+        {
+            string localHostAddress = $"http://localhost:{FilterServicePort}";
+            GrpcChannel channel = GrpcChannel.ForAddress(localHostAddress);
+            GrpcClientFactory.AllowUnencryptedHttp2 = true;
+            string csv = Encoding.Default.GetString(dataResponse.Data);
+            int[] keepColumns = new int[] { 1, 2, 5 };
+            CsvFilterRequest filterRequest = new() { Csv = csv, KeepColumns = keepColumns, RemoveHeader = true };
+            string response;
+            using(channel)
+            {
+                ITextFilterService textFilter = channel.CreateGrpcService<ITextFilterService>();
+                response = await textFilter.FilterCsvColumns(filterRequest);
             }
             return response;
         }

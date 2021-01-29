@@ -12,6 +12,7 @@
             public const int DataAccessServicePort = 3000;
             public const int HubPort = 3002;
             public const int FloodingAlerterWorkflowPort = 3004;
+            public const int FilterServicePort = 3006;
         }
 
         public static class HubNames
