@@ -17,5 +17,8 @@ namespace Corp.Services.DataContracts
 
         [DataMember(Order = 4)]
         public string MessageInfo { get; set; }
+
+        [DataMember(Order = 5)]
+        public string WindDirection { get; set; }
     }
 }

@@ -52,7 +52,7 @@ namespace Corp.Services.SignalRHub
 
         private string ConstructAlertMessage(FloodingAlertWorkflowResponse r)
         {
-            return $"Vandstanden er {r.WaterLevel} cm og vinden er ikke implementeret.";
+            return $"Vandstanden er {r.WaterLevel} cm og vinden er {r.WindSpeed} m/s.";
         }
     }
 }
