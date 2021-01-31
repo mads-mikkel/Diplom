@@ -3,7 +3,6 @@ using Grpc.Net.Client;
 using Newtonsoft.Json;
 using ProtoBuf.Grpc.Client;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.ServiceModel;
@@ -88,13 +87,12 @@ namespace Corp.Services.Contracts
             WindSpeedResponse deserializedJson = JsonConvert.DeserializeObject<WindSpeedResponse>(response);
             windSpeed = deserializedJson.Value.ToString();
             return windSpeed;
-            //Double.TryParse(deserializedJson.value, NumberStyles.Float, new CultureInfo("da-DK"), out windSpeed);
         }
 
         private string GenerateCoastDirectorateUrl()
         {
             string baseUrl = "https://kystatlas.kyst.dk/public2/data/vandstand/response.aspx?";
-            string station = "6701"; // Ribe;
+            string station = "6701"; // Vester Vedsted
             string startDate = DateTime.Today.ToString("yyyyMMdd");
             string endDate = DateTime.Today.AddDays(1).ToString("yyyyMMdd");
             string format = "csv";
