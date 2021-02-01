@@ -5,19 +5,12 @@ using ProtoBuf.Grpc.Client;
 using System;
 using System.Linq;
 using System.Net;
-using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 using static Corp.Resources.Infrastructure.Endpoints.Services;
 
 namespace Corp.Services.Contracts
 {
-    [ServiceContract]
-    public interface IFloodingAlertWorkflowService
-    {
-        [OperationContract]
-        Task<FloodingAlertWorkflowResponse> StartWorkflow();
-    }
 
     public class FloodingAlertWorkflowService: IFloodingAlertWorkflowService
     {
@@ -92,7 +85,7 @@ namespace Corp.Services.Contracts
         private string GenerateCoastDirectorateUrl()
         {
             string baseUrl = "https://kystatlas.kyst.dk/public2/data/vandstand/response.aspx?";
-            string station = "6701"; // Vester Vedsted
+            string station = "6701"; // Ribe havn
             string startDate = DateTime.Today.ToString("yyyyMMdd");
             string endDate = DateTime.Today.AddDays(1).ToString("yyyyMMdd");
             string format = "csv";
@@ -114,7 +107,7 @@ namespace Corp.Services.Contracts
                 default:
                     break;
             }
-            url += "&stationId=06093&api-key=5910e131-7fe5-43eb-9a29-bfe480b5f7b8";
+            url += "&stationId=06093&api-key=5910e131-7fe5-43eb-9a29-bfe480b5f7b8"; // Station Vester Vedsted
             return url;
         }
 

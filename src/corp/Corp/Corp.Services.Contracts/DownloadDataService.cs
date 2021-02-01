@@ -1,12 +1,12 @@
 ﻿using Corp.Services.DataContracts;
 using System;
 using System.Net;
-using System.ServiceModel;  // Uses protobuf-net.Grpc package. Do not know why. 
+using System.ServiceModel;
 using System.Threading.Tasks;
 
 namespace Corp.Services.Contracts
 {
-    [ServiceContract(Name = "DownloadDataService")]
+    [ServiceContract]
     public interface IDownloadDataService
     {
         [OperationContract]

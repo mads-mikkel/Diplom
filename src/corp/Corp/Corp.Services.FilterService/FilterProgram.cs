@@ -8,14 +8,17 @@ namespace Corp.Services.FilterService
 {
     public class FilterProgram
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
         }
 
         public static IWebHostBuilder CreateHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                   .ConfigureKestrel(options => options.ListenLocalhost(FilterServicePort, ListenOptions => ListenOptions.Protocols = HttpProtocols.Http2))
+                   .ConfigureKestrel(options => options.ListenLocalhost(
+                            FilterServicePort, 
+                            ListenOptions => ListenOptions.Protocols = HttpProtocols.Http2)
+                   )
                    .UseStartup<FilterStartup>();
     }
 }
